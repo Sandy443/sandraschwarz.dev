@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --background: #f2f2f2;
+  --primary: #353535;
+  --secondary: #010101;
+  --cta: #353535;
+  --ctaHover: #010101;
+  --accent: #000000;
+  --text: #010101;
+  --textLight: #f2f2f2;
+}
+
+
+/* When changing styles of basic html tags (not tailwind specific classes), wrap it
+   inside of @layer base to ensure, tailwind understands it. */
+@layer base {
+  /* Body: especially useful for adding a global max-width-screen of - mostly 2xl */
+  body {
+    @apply mx-auto bg-background;
+  }
+  html {
+    @apply scroll-smooth;
+  }
+
+  h1 {
+    @apply text-[36px] md:text-[45px] lg:text-[56px]
+          leading-[59px] md:leading-[66px] lg:leading-[70px]
+          tracking-[-0.03em]
+          font-bold;
+  }
+
+  .subheading {
+    @apply text-[15px] md:text-[16px] lg:text-[18px]
+          leading-[1.7em]
+          tracking-[0em] md:tracking-[0.09em] text-center
+          mb-8 font-light;
+  }
+
+  h2 {
+    @apply text-[26px] md:text-[32px] lg:text-[40px]
+          leading-[43px] md:leading-[46px] lg:leading-[60px]
+          tracking-[-0.03em] font-bold text-center;
+  }
+
+  h3 {
+    @apply text-[15px] md:text-[19px] lg:text-[24px]
+          leading-[44px]
+          tracking-[-0.01em];
+  }
+
+  h4 {
+    @apply text-[14px] md:text-[17px] lg:text-[22px]
+          leading-[44px]
+          tracking-[-0.01em];
+  }
+}
