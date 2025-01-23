@@ -18,7 +18,7 @@ Außerdem habe ich mit React Native bereits einen ersten Prototypen für die Mob
     tailwind: {
         title: "React mit Tailwind", 
         desc: "Erstellung einer fiktiven Business-Website zur Vertiefung meiner Kenntnisse in Tailwind CSS. Fokus auf modernes Design und responsive Layouts.", 
-        url: "https://montana-suedtirol.com",
+        url: "https://sandy443.github.io/tailwind_demo/#/",
         img: "/images/tailwind.png",
     },
 };
